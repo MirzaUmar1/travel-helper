@@ -1,0 +1,103 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-image:url('../Static/background_image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+}
+
+/* Home page */
+
+.page-content{
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:30px;
+}
+.keyword {
+    font-weight: bold;
+}
+
+.keyword:hover {
+    font-weight: bolder;
+}
+
+#search-alert{
+    width:20%;
+    position:center;
+    margin-top:5px;
+    flex-wrap:nowrap;
+}
+
+/* Recommendations */
+
+#recommendations {
+    width:60%;
+    visibility: hidden;
+    margin:auto;
+}
+
+.accordion-body{
+    background-color:none;
+    color:black;
+}
+
+#recommend_title{
+    padding-bottom:10px;
+}
+
+#recommend_list{
+    overflow-y:auto;
+    height:70vh;
+}
+
+#recommend_list::-webkit-scrollbar {
+    display: none;
+}
+
+.card{
+    margin-bottom:10px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    width:18rem;
+}
+
+.imageUrl{
+    width:50%;
+    height:auto;
+}
+
+.recommendation{
+    margin-bottom:10px;
+}
+
+.card-list{
+    list-style:none;
+}
+
+/* About us*/
+.description{
+    text-align:justify;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.flag-icon {
+    border-radius: 60px;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+#meet-title{
+    margin:50px;
+}
+
+/* Contact Us */
+.contact-form{
+    float:left;
+    width:50%;
+}
+
