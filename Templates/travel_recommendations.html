@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Helper</title>
+
+
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <!-- Bootstrap (and Popper)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../CSS/travel_recommendations.css" />
+    <script src="../Scripts/travel_recommendations.js"></script>
+
+</head>
+<body onload="loadHome();">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Travel Helper</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" id="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about_us">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact_us">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" autocomplete="off">
+                    <div id="search-popover"
+                          data-bs-toggle="search-popover"
+                          data-bs-placement="bottom"
+                          data-bs-content="Invalid search">
+                        <input class="form-control me-2" id="dest_search" placeholder="Search your destination" aria-label="Search">
+                    </div>
+                    <button class="btn btn-outline-success" id="search-button" type="button">Search</button>
+                </form>
+                <button class="btn btn-outline-success" type="button" onclick="clearSearch();">Clear</button>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="search-alert"></div>
+
+    <div id="main-content"></div>
+
+</body>
+</html>
